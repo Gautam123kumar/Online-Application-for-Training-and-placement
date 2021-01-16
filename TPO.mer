@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="laxmai" database="TPO" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="ACADAMICDETAILS">
+      <Drawing expanded="true" location="452,133" dimensions="211,269" />
+      <Columns>
+        <Column name="LOGINNAME" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="SSCYOP" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SSCPERCENTAGE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="UGYOP" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="UGPERCENTAGE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="GYOP" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="GPERCENTAGE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ROLLNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="YEAROFJOINING" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COURSE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="DISCIPLINE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="SEMISTER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="AGGREGATES">
+      <Drawing expanded="true" location="1409,281" dimensions="187,69" />
+      <Columns>
+        <Column name="LOGINNAME" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="AGGREGATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="LOGINAUDIT">
+      <Drawing expanded="true" location="1403,111" dimensions="184,89" />
+      <Columns>
+        <Column name="LOGINID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LOGINDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="LOGINDESC" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="LOGINDETAILS">
+      <Drawing expanded="true" location="772,429" dimensions="228,248" />
+      <Columns>
+        <Column name="LOGINNAME" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="FIRSTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LASTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LOGINTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LOGINSTATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="REGDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="SQUESTIONID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SANSWER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="FIRSTLOGIN" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="PASSMODIFIEDDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="LOGINPROFILE">
+      <Drawing expanded="true" location="1120,142" dimensions="245,269" />
+      <Columns>
+        <Column name="LOGINID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="BIRTHDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="HNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="STREET" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="COUNTRY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="PINCODE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="CONTACTNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="EMAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LOCALE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="PROFILEMODIFIEDDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="NOTIFICATION">
+      <Drawing expanded="true" location="23,303" dimensions="220,249" />
+      <Columns>
+        <Column name="NOTIFICATIONID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COMPANYID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="NOOFVAC" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="CATEGORY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LOCATION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="JOBDESC" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="SKILLS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="CREATEDDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="EXPIRYDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DESIGNATION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="PLACEMENTS">
+      <Drawing expanded="true" location="205,148" dimensions="212,108" />
+      <Columns>
+        <Column name="NOTIFICATIONID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ROLLNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LOGINNAME" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="QUESTIONBASE">
+      <Drawing expanded="true" location="1118,718" dimensions="214,69" />
+      <Columns>
+        <Column name="QUESTIONID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="QUESTIONDETAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="80" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="SEMPERCENTAGES">
+      <Drawing expanded="true" location="680,80" dimensions="192,109" />
+      <Columns>
+        <Column name="LOGINNAME" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="SEMISTER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="YEAROFPASS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="AGGREGATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="STUDENTSKILLS">
+      <Drawing expanded="true" location="906,70" dimensions="195,109" />
+      <Columns>
+        <Column name="LOGINNAME" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="SKILLNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="DESCRIPTION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LEVELDESC" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships>
+    <Relationship name="LOGINID_ACADAMICDETAILS_FK">
+      <Details primary_table="LOGINDETAILS" foreign_table="ACADAMICDETAILS">
+        <PrimaryKeys>
+          <ColumnName name="LOGINNAME" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINNAME" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="LOGINID_AGGREGATES_FK">
+      <Details primary_table="LOGINDETAILS" foreign_table="AGGREGATES">
+        <PrimaryKeys>
+          <ColumnName name="LOGINNAME" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINNAME" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="LOGINID_LOGINAUDIT_FK">
+      <Details primary_table="LOGINDETAILS" foreign_table="LOGINAUDIT">
+        <PrimaryKeys>
+          <ColumnName name="LOGINNAME" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="QID_LOGINDETAILS_FK">
+      <Details primary_table="QUESTIONBASE" foreign_table="LOGINDETAILS">
+        <PrimaryKeys>
+          <ColumnName name="QUESTIONID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="SQUESTIONID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="LOGINID_LOGINPROFILE_FK">
+      <Details primary_table="LOGINDETAILS" foreign_table="LOGINPROFILE">
+        <PrimaryKeys>
+          <ColumnName name="LOGINNAME" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="LOGINNAME_PLACEMENTS_FK">
+      <Details primary_table="LOGINDETAILS" foreign_table="PLACEMENTS">
+        <PrimaryKeys>
+          <ColumnName name="LOGINNAME" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINNAME" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="NOTIFICATIONID_PLACEMENTS">
+      <Details primary_table="NOTIFICATION" foreign_table="PLACEMENTS">
+        <PrimaryKeys>
+          <ColumnName name="NOTIFICATIONID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="NOTIFICATIONID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="LOGINNAME_SEMPERCENTAGES_FK">
+      <Details primary_table="LOGINDETAILS" foreign_table="SEMPERCENTAGES">
+        <PrimaryKeys>
+          <ColumnName name="LOGINNAME" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINNAME" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="LOGINNAME_STUDENTSKILLS_FK">
+      <Details primary_table="LOGINDETAILS" foreign_table="STUDENTSKILLS">
+        <PrimaryKeys>
+          <ColumnName name="LOGINNAME" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINNAME" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+  </Relationships>
+</ERDiagram>
+

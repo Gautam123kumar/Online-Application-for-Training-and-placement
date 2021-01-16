@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="TPO1"
+  id="myeclipse.1199458141544"
+  context-root="/TPO"
+  j2ee-spec="1.4"
+  archive="TPO1.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
